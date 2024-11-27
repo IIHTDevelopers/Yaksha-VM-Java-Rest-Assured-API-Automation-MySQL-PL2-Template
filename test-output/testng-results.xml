@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="0" failed="15" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-27T13:49:48 IST" name="Suite" finished-at="2024-11-27T13:50:43 IST" duration-ms="55334">
+    <groups>
+      <group name="PL2">
+        <method signature="RestAssured_TestCases_PL2.createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="createAppointmentTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.cancelAppointmentTest()[pri:2, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="cancelAppointmentTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.searchPatientTest()[pri:3, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="searchPatientTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.BookingListTest()[pri:4, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="BookingListTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.MainStoreTest()[pri:5, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="MainStoreTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.PharmacyStoreTest()[pri:6, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="PharmacyStoreTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.ActivatePharmacyCountTest()[pri:7, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="ActivatePharmacyCountTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.DeactivatePharmCountTest()[pri:8, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="DeactivatePharmCountTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.AppointApplicDeptTest()[pri:9, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="AppointApplicDeptTest" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.addANewDepartment()[pri:12, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="addANewDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetDepartments()[pri:13, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetDepartments" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.EditDepartment()[pri:14, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="EditDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetImagingTypes()[pri:15, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetImagingTypes" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.AdmittedPatientsData()[pri:10, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="AdmittedPatientsData" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetProfileDataByEmployeeId()[pri:11, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetProfileDataByEmployeeId" class="testcases.RestAssured_TestCases_PL2"/>
+        <method signature="RestAssured_TestCases_PL2.GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@4983159f]" name="GetSignatoriesByDepartment" class="testcases.RestAssured_TestCases_PL2"/>
+      </group> <!-- PL2 -->
+    </groups>
+    <test started-at="2024-11-27T13:49:48 IST" name="Test" finished-at="2024-11-27T13:50:43 IST" duration-ms="55334">
+      <class name="testcases.RestAssured_TestCases_PL2">
+        <test-method signature="createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:49:49 IST" name="createAppointmentTest" description="Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains &#039;Status&#039; as &#039;OK&#039;
+4. Retrieve and validate the Appointment ID from the response" finished-at="2024-11-27T13:49:49 IST" duration-ms="79" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "response" is null
+at testcases.RestAssured_TestCases_PL2.createAppointmentTest(RestAssured_TestCases_PL2.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointmentTest -->
+        <test-method signature="searchPatientTest()[pri:3, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:49:56 IST" name="searchPatientTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of all the users that contain the string in their name." finished-at="2024-11-27T13:49:56 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "searchedResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "searchedResponse" is null
+at testcases.RestAssured_TestCases_PL2.searchPatientTest(RestAssured_TestCases_PL2.java:112)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPatientTest -->
+        <test-method signature="BookingListTest()[pri:4, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:00 IST" name="BookingListTest" description="Precondition: Appointments must be made between current date and 5 days before the current date.
+1. Send a GET request to fetch whether an appointment for the same time is created for the same doctor.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of appointments along with patient Id and Appointment time." finished-at="2024-11-27T13:50:00 IST" duration-ms="61" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null
+at testcases.RestAssured_TestCases_PL2.BookingListTest(RestAssured_TestCases_PL2.java:156)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookingListTest -->
+        <test-method signature="MainStoreTest()[pri:5, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:03 IST" name="MainStoreTest" description="1. Send a GET request to fetch Main Store from the Pharmacy Settings.
+2. Verify the response status code is 200.
+3. Validate the response has an Id corresponding to the store along with the name and store description." finished-at="2024-11-27T13:50:03 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "stockDetails" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "stockDetails" is null
+at testcases.RestAssured_TestCases_PL2.MainStoreTest(RestAssured_TestCases_PL2.java:204)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainStoreTest -->
+        <test-method signature="PharmacyStoreTest()[pri:6, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:06 IST" name="PharmacyStoreTest" description="Precondition: Some Pharmacy Stores must be created already. 
+1. Send a GET request to fetch whether we are able to fetch the pharmacy stores or not.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of name of the store along with Store Id." finished-at="2024-11-27T13:50:06 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "pharmacyStoreResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "pharmacyStoreResponse" is null
+at testcases.RestAssured_TestCases_PL2.PharmacyStoreTest(RestAssured_TestCases_PL2.java:240)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PharmacyStoreTest -->
+        <test-method signature="ActivatePharmacyCountTest()[pri:7, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:09 IST" name="ActivatePharmacyCountTest" description="Pre-conditions: Will require the counter Id and counterName to enter as a qeury paramter in the API. 
+1. Send a PUT request to see whether we are able to activate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of counter Id and counterName" finished-at="2024-11-27T13:50:09 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null
+at testcases.RestAssured_TestCases_PL2.ActivatePharmacyCountTest(RestAssured_TestCases_PL2.java:277)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivatePharmacyCountTest -->
+        <test-method signature="DeactivatePharmCountTest()[pri:8, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:12 IST" name="DeactivatePharmCountTest" description="1. Send a PUT request to fetch whether we are able to deactivate the pharmacy counter.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of status code as 200." finished-at="2024-11-27T13:50:12 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "consumptionResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "consumptionResponse" is null
+at testcases.RestAssured_TestCases_PL2.DeactivatePharmCountTest(RestAssured_TestCases_PL2.java:318)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeactivatePharmCountTest -->
+        <test-method signature="AppointApplicDeptTest()[pri:9, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:16 IST" name="AppointApplicDeptTest" description="1. Send a GET request to fetch a list of Appointment Applicable Departments.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of department name, department id, department code" finished-at="2024-11-27T13:50:16 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "appointResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "appointResponse" is null
+at testcases.RestAssured_TestCases_PL2.AppointApplicDeptTest(RestAssured_TestCases_PL2.java:346)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointApplicDeptTest -->
+        <test-method signature="AdmittedPatientsData()[pri:10, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:19 IST" name="AdmittedPatientsData" description="1. Send a GET request to fetch a list of currently Admitted Patients Data.
+2. Verify the response status code is 200.
+3. Validate the response indicates successfull display of Patient Admission Id, Admitted Date but Discharged Date must be null" finished-at="2024-11-27T13:50:19 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "admittedPatientResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "admittedPatientResponse" is null
+at testcases.RestAssured_TestCases_PL2.AdmittedPatientsData(RestAssured_TestCases_PL2.java:381)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmittedPatientsData -->
+        <test-method signature="GetProfileDataByEmployeeId()[pri:11, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:22 IST" name="GetProfileDataByEmployeeId" description="1. Send a GET request to fetch profile details.
+2. Verify the response status code is 200.
+3. Verify employee ID is not null. 
+3. Validate the response indicates successful display of account holder details." finished-at="2024-11-27T13:50:22 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.get(Object)" because "expectedProfileDetails" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "expectedProfileDetails" is null
+at testcases.RestAssured_TestCases_PL2.GetProfileDataByEmployeeId(RestAssured_TestCases_PL2.java:418)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProfileDataByEmployeeId -->
+        <test-method signature="addANewDepartment()[pri:12, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:25 IST" name="addANewDepartment" description="1. Send a GET request to add a new Department and fetch response details.
+2. Verify the response status code is 200.
+3. Verify Department code is not null. 
+3. Validate the response indicates successful display of department creation." finished-at="2024-11-27T13:50:25 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "addANewDepartmentResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "addANewDepartmentResponse" is null
+at testcases.RestAssured_TestCases_PL2.addANewDepartment(RestAssured_TestCases_PL2.java:481)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addANewDepartment -->
+        <test-method signature="GetDepartments()[pri:13, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:28 IST" name="GetDepartments" description="1. Send a GET request to get the list of departments.
+2. Verify the response status code is 200.
+3. Verify the department codes are unique.
+" finished-at="2024-11-27T13:50:28 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "departmentsListResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "departmentsListResponse" is null
+at testcases.RestAssured_TestCases_PL2.GetDepartments(RestAssured_TestCases_PL2.java:509)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDepartments -->
+        <test-method signature="EditDepartment()[pri:14, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:31 IST" name="EditDepartment" description="1. Send a PUT request to edit the department details.
+2. Verify the response status code is 200.
+3. Validate the response indicates successful display of department details with changes being present in the response." finished-at="2024-11-27T13:50:31 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" because "searchResult" is null
+at testcases.RestAssured_TestCases_PL2.EditDepartment(RestAssured_TestCases_PL2.java:541)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditDepartment -->
+        <test-method signature="GetImagingTypes()[pri:15, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:34 IST" name="GetImagingTypes" description="1. Send a GET request to get imaging types.
+2. Verify the response status code is 200.
+" finished-at="2024-11-27T13:50:34 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "imagingTypesResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "imagingTypesResponse" is null
+at testcases.RestAssured_TestCases_PL2.GetImagingTypes(RestAssured_TestCases_PL2.java:587)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetImagingTypes -->
+        <test-method signature="GetSignatoriesByDepartment()[pri:16, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:37 IST" name="GetSignatoriesByDepartment" description="1. Send a GET request to get signatories by department.
+2. Verify the response status code is 200.
+3. Verify that the EmployeeId, FirstName, LastName are not null from the response validating that the data is present." finished-at="2024-11-27T13:50:37 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.statusCode()" because "signDetailsFromDeptResponse" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.statusCode()" because "signDetailsFromDeptResponse" is null
+at testcases.RestAssured_TestCases_PL2.GetSignatoriesByDepartment(RestAssured_TestCases_PL2.java:624)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSignatoriesByDepartment -->
+        <test-method signature="cancelAppointmentTest()[pri:2, instance:testcases.RestAssured_TestCases_PL2@4983159f]" started-at="2024-11-27T13:50:40 IST" name="cancelAppointmentTest" description="Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation." finished-at="2024-11-27T13:50:40 IST" depends-on-methods="testcases.RestAssured_TestCases_PL2.createAppointmentTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testcases.RestAssured_TestCases_PL2.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL2@4983159f depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL2.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL2@4983159f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testcases.RestAssured_TestCases_PL2.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL2@4983159f depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL2.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL2@4983159f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointmentTest -->
+      </class> <!-- testcases.RestAssured_TestCases_PL2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
